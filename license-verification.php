@@ -1970,7 +1970,7 @@ function lv_verification_shortcode($atts) {
             if (!$city_eligible) {
                 ?>
                 <div class="lv-city-eligibility-wrap">
-                    <p class="lv-city-message lv-city-error">Sorry, your city ('<?php echo esc_html($city_name); ?>') is not eligible for verification at this time.</p>
+                    <p class="lv-city-message lv-city-error">Sorry, your state ('<?php echo esc_html($city_name); ?>') is not eligible for verification at this time.</p>
                     <h2 class="lv-city-eligibility-title"><?php echo esc_html($form_name); ?></h2>
                     <form method="post" action="" class="lv-city-eligibility-form">
                         <div class="lv-city-form-group">
