@@ -2205,9 +2205,6 @@ register_deactivation_hook(__FILE__, 'lv_deactivate');
 
 // Uninstall hook
 function lv_uninstall() {
-    delete_option('lv_form_fields');
-    delete_option('lv_retrieval_field');
-    delete_option('lv_entries');
     delete_option('lv_license_key');
     delete_option('lv_license_status');
     delete_option('lv_license_expiry');
@@ -2216,7 +2213,6 @@ function lv_uninstall() {
     delete_option('lv_last_usage_report');
     delete_option('lv_registered_site_url');
     delete_option('lv_verification_system_active');
-    delete_option('lv_cities');
     delete_option('lv_show_city_eligibility');
     delete_option('lv_backups'); // Add this line
     delete_transient('lv_license_alert');
